@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - ID & Class</title>
+    <style>
+        /* #paragraf-2{
+            color: red;
+        } */
+
+        .text-blue{
+            color:blue;
+        }
+
+        .text-underline{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 id="judul-utama">Halaman Utama</h1>
+
+    <ul>
+        <li><a href="#paragraf-1">Paragraf 1</a></li>
+        <li><a href="#paragraf-2">Paragraf 2</a></li>
+        <li><a href="#paragraf-3">Paragraf 3</a></li>
+    </ul>
+
+    <h2 id="paragraf-1">Paragraf 1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ratione iusto dolore nostrum eius officia aut similique, eligendi sapiente quod laboriosam, perspiciatis animi. Repellendus assumenda provident alias. Nostrum nisi molestias reiciendis dolor, quibusdam doloribus nobis ad! Repudiandae deleniti maxime error praesentium? Hic magni maiores asperiores accusantium odit esse, eius cum quas quia placeat nam non, pariatur voluptatibus. Pariatur asperiores labore animi, hic possimus commodi rem vero beatae delectus, obcaecati minus magnam velit consequatur facere incidunt adipisci, voluptatibus quae nesciunt impedit numquam. Repellendus voluptate dolor numquam unde, vitae doloremque quibusdam facere expedita nisi at modi nostrum porro delectus placeat minima illo.</p>
+
+    <h2 id="paragraf-2" class="text-blue text-underline">Paragraf 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae inventore in corporis, pariatur tenetur laboriosam explicabo velit nemo adipisci nesciunt qui reiciendis cumque consequatur. Excepturi explicabo molestias commodi veniam consectetur. Ducimus, suscipit culpa. Inventore excepturi placeat ipsa blanditiis vel! Eveniet esse, sed aliquid similique nam mollitia ea eos facilis quas.</p>
+
+    <h2 id="paragraf-3">Paragraf 3</h2>
+    <p class="text-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores ex architecto sequi cumque, voluptatem iusto molestiae obcaecati itaque alias nulla deleniti laborum, facere rem consectetur harum? Distinctio numquam amet consequatur quae ipsa ducimus molestiae quasi maiores placeat sint. Provident commodi quibusdam qui quaerat reprehenderit impedit beatae fugit. Earum voluptatum fuga a amet hic vitae totam commodi iusto dicta rerum!</p>
+
+    <h2 class="text-bordered">Paragraf 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ipsum ad autem dolor laboriosam quaerat natus necessitatibus alias eos omnis ipsam minus, maiores exercitationem iusto pariatur corrupti explicabo iure! Facere accusamus, beatae assumenda omnis error, rerum quas non reprehenderit eligendi sunt et quis similique mollitia inventore quidem cupiditate. Debitis, voluptatum.</p>
+
+    <h2 class="text-bordered">Paragraf 5</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium labore assumenda itaque amet iure officia beatae ducimus modi in delectus doloribus, autem deleniti voluptas quos quae alias at aliquid ipsam cupiditate animi necessitatibus et nisi dolore ipsa! Provident deserunt vitae eius dolor repellat nostrum ipsam, numquam dolores perferendis accusantium impedit?</p>
+
+    <script>
+        const judulutama = document.getElementById("judul-utama");
+        judulutama.style.textDecoration = 'underline';
+
+        const text = document.getElementsByClassName("text-bordered");
+        for(t of text){
+            t.style.border = "1px solid red";
+        }
+    </script>
+
+</body>
+</html>
